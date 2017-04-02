@@ -1,52 +1,28 @@
-<html>
+<!doctype html>
+
 <head>
+<title>Sustainable Food Search</title>
 </head>
+
 <body>
-  <p> Welcome to our Sustainable Food Website! We will allow you to satisfy your food cravings in a sustainable way! Please enter your requirements and email address. We will provide you with a range of suitable options.
-  </p>
-  
-  <form>
-  Location (St Andrews or Dundee, or leave blank for either):<br>
-  <input type="text" name="location"><br>
-  Dietary requirements:<br>
-  <input type="text" name="diet-req"><br>
-  Cuisine (e.g. Chinese, Indian, Western, Scottish):<br>
-  <input type="text" name="cuisine"><br>
-  Average price (low, medium, high or leave blank):<br>
-  <input type="text" name="price">
-</form>
-  <button type="button">Search</button>
-  <p>If you're feeling spontaneous or indecisive, click the Surprise Me button for a random Sustainable Food option.</p>
-    <button type="button">Surprise Me</button>
-  <p>If you'd like to view all of our Sustainable Food options, click Show All for the full list.</p>
-  <button type="button">Show All</button>
-  
-  <!-- we should put this whole page in a bootstrap container and put these into columns to make it look nice -->
-  <p>Looking for inspiration? Here's a list of all the terms you can search for above.</p>
-  <p>Dietary requirements</p>
-  <ul>
-    <li>Vegetarian</li>
-    <li>Vegan</li>
-    <li>Gluten Free</li>
-    <li>Kids</li>
-    <li>Halal</li>
-    <li>Kosher</li>
-  </ul>
-  <p>Cuisine</p>
-  <ul>
-    <li>Scottish</li>
-    <li>Western</li>
-    <li>Chinese</li>
-    <li>Indian</li>
-    <li>Fusion</li>
-  </ul>
-  <p>Our prices are organised as follows:</p>
-  <ul>
-    <li>Low = average main course under £7</li>
-    <li>Medium = average main course £7-£10</li>
-    <li>High = average main course over £10</li>
-  </ul>
-  
-  
-</body>
-</html>
+
+<div id="search-form">
+    <h1>Sustainable Food</h1>
+    <form method='post' action="/search">
+        <label for="location">Location: </label>
+        <input type="text" id="location" name="location" value=""
+        placeholder="Dundee" required="required" autofocus="autofocus" />
+        <label for="dietary">Dietary requirements: </label>
+        <input type="text" id="dietary" name="dietary" value=""
+        placeholder="vegan" required="required" />
+        <label for="cuisine">Cuisine: </label>
+        <input type="text" id="cuisine" name="cuisine" value=""
+        placeholder="scottish" required="required" />
+        <label for="price">Price: </label>
+        <input type="text" ide="price" name="price" value=""
+        placeholder="low" required="required" />
+        <input type="submit value="Submit" id="submit-button" />
+    </form>
+</div>
+
+<body>
