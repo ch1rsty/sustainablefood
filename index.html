@@ -8,7 +8,7 @@
 
 <div id="search-form">
     <h1>Sustainable Food</h1>
-    <form method='post' action="/search">
+    <form method='post' action="/search" id="form1">
         <label for="location">Location: </label>
         <input type="text" id="location" name="location" value=""
         placeholder="Dundee" required="required" autofocus="autofocus" />
@@ -19,10 +19,12 @@
         <input type="text" id="cuisine" name="cuisine" value=""
         placeholder="scottish" required="required" />
         <label for="price">Price: </label>
-        <input type="text" ide="price" name="price" value=""
+        <input type="text" id="price" name="price" value=""
         placeholder="low" required="required" />
-        <input type="submit value="Submit" id="submit-button" />
+        <input type="submit" name="Submit" value="submit" />
+
     </form>
+
 </div>
 
 <body>
